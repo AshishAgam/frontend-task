@@ -1,5 +1,5 @@
 
-/* hero */
+/* hero section */
 
 * {
   margin: 0;
@@ -10,15 +10,22 @@
 
 body {
   background-color: #f5f5f5;
+  padding-top: 50px;
 }
 
 .navbar {
+    position: fixed;           
+    top: 0;                   
+    left: 0;
+    width: 100%; 
     height: 70px;
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
     background: white;
     align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    z-index: 999;
 }
 
 
@@ -133,7 +140,107 @@ body {
     cursor: pointer;
 }
 
-/* about */
+/* media query for hero section */
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+  /* Navbar responsiveness */
+  .navbar {
+    flex-direction: row;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .logo-container {
+    padding-left: 0;
+  }
+
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  /* Hide logos if needed on small screens */
+  .logo {
+    height: 40px;
+  }
+
+  /* Hero section stacking */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-position: top;
+  }
+
+  .hero .left {
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .hero .left h1 {
+    font-size: 22px;
+  }
+
+  .hero .left p {
+    font-size: 12px;
+  }
+
+  .right {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .contact-form label {
+    text-align: left;
+  }
+
+  .contact-form button {
+    width: 60%;
+  }
+}
+
+/* Hide on larger screens (laptops, desktops) */
+@media (min-width: 768px) {
+  .navbar .menu-toggle {
+    display: none;
+  }
+}
+
+
+/* about section */
 
 .about-section {
   display: flex;
@@ -184,19 +291,62 @@ body {
   cursor: pointer;
 }
 
-/* knowledge partners */
+/* media query for about us */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .about-left img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    box-shadow: none;
+  }
+
+  .about-right {
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .about-right h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .about-right p {
+    font-size: 14px;
+  }
+
+  .about-right p:first-of-type {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .about-right .explore-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* knowledge partners section*/
 
 .knowledge-partners {
-  padding: 50px 20px;
   text-align: center;
+  padding: 50px 20px;
   background-color: #f3faff;
 }
 
 .section-heading {
+  color: #333;
   margin-bottom: 30px;
   font-size: 32px;
   font-weight: bold;
-  color: #333;
 }
 
 .partner-tabs {
@@ -329,4 +479,73 @@ body {
 .arrow-right {
   right: 10px;
   margin-right: 110px;
+}
+
+
+/* media query for knowledge partner */
+@media (max-width: 768px) {
+  .partner-tabs {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+  .arrow {
+    display: none; /* Hide arrows on mobile */
+  }
+
+  .viewport {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .slides {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .partners {
+    width: 90%;
+  }
+
+  .partners img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .partners-details {
+    position: static;
+    width: 90%;
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+  }
+
+  .btn-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 10px;
+    padding: 10px 16px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .partner-tab {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
 }

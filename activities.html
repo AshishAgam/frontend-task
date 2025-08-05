@@ -12,6 +12,9 @@
         <img src="assets/images/logo1.png" class="logo" />
         <img src="assets/images/logo2.jpg" class="logo" />
         </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
         <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -83,6 +86,14 @@
             <button class="arrow arrow-right" onclick="scrollCarousel(1)">&#8250;</button>
         </div>
     </section>
+
+    <!-- javascript code for menu hamburger -->
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector('.navbar nav');
+        nav.classList.toggle('active');
+      }
+    </script>
 
 </body>
 </html>

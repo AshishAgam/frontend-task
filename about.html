@@ -13,6 +13,9 @@
       <img src="assets/images/logo1.png" alt="Logo 1" class="logo" />
       <img src="assets/images/logo2.jpg" alt="Logo 2" class="logo" />
     </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -26,20 +29,28 @@
   </header>
 
   <section class="about-section">
-  <div class="about-left">
-    <img src="assets/images/about.jpg" alt="About Image" />
-  </div>
-  <div class="about-right">
-    <h2>About SkillOne Institute</h2>
-    <p>
-      Founded in 2024 by Shri Hirji Bhojraj & Sons, SkillOne Institute was established at the renowned Matunga Boarding with a mission to empower students, especially from the KVO and Jain communities, through professional, skill-based education.
-    </p>
-    <p>
-      The institute offers a wide range of design and media courses, supported by internship and placement opportunities across creative industries. To ensure high-quality learning, SkillOne has partnered with some of the industry’s most reputed institutions, including Le Mark Institute, LTA Academy, Raj Computers, and Acazdo. In addition to academic support, Shri Hirji Bhojraj & Sons actively provides scholarships and education loan facilities, in collaboration with these knowledge partners, to make career-focused education accessible for all aspiring individuals.
-    </p>
-    <button class="explore-btn">EXPLORE NOW</button>
-  </div>
-</section>
+      <div class="about-left">
+        <img src="assets/images/about.jpg" alt="About Image" />
+      </div>
+      <div class="about-right">
+        <h2>About SkillOne Institute</h2>
+        <p>
+          Founded in 2024 by Shri Hirji Bhojraj & Sons, SkillOne Institute was established at the renowned Matunga Boarding with a mission to empower students, especially from the KVO and Jain communities, through professional, skill-based education.
+        </p>
+        <p>
+          The institute offers a wide range of design and media courses, supported by internship and placement opportunities across creative industries. To ensure high-quality learning, SkillOne has partnered with some of the industry’s most reputed institutions, including Le Mark Institute, LTA Academy, Raj Computers, and Acazdo. In addition to academic support, Shri Hirji Bhojraj & Sons actively provides scholarships and education loan facilities, in collaboration with these knowledge partners, to make career-focused education accessible for all aspiring individuals.
+        </p>
+        <button class="explore-btn">EXPLORE NOW</button>
+      </div>
+  </section>
+
+  <!-- javascript code for menu hamburger -->
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.navbar nav');
+      nav.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
