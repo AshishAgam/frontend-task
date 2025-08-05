@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+        <img src="assets/images/logo1.png" alt="Logo 1" class="logo" />
+        <img src="assets/images/logo2.jpg" alt="Logo 2" class="logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="left">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lorem congue, aliquet ex sed, molestie ligula. Duis non mi metus. Curabitur feugiat nisi quis lorem gravida tristique. Morbi ex velit, lacinia ac diam eu, maximus posuere purus.</p>
+      <button class="explore-btn">EXPLORE NOW</button>
+    </div>
+    <div class="right">
+        <form class="contact-form">
+            <h2>Let's Connect</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" />
+
+            <label for="email">Email Id</label>
+            <input type="email" id="email" placeholder="Your Email" />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Your Phone Number" />
+
+            <label for="partner">Knowledge Partner</label>
+            <select id="partner">
+                <option>Select Knowledge Partner</option>
+            </select>
+
+            <label for="courses">Courses</label>
+            <select id="courses">
+                <option>Select Courses</option>
+            </select>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+  </section>
+
+  <!-- abouot section -->
+  <section class="about-section">
+    <div class="about-left">
+      <img src="assets/images/about.jpg" alt="About Image" />
+    </div>
+    <div class="about-right">
+      <h2>About SkillOne Institute</h2>
+      <p>
+        Founded in 2024 by Shri Hirji Bhojraj & Sons, SkillOne Institute was established at the renowned Matunga Boarding with a mission to empower students, especially from the KVO and Jain communities, through professional, skill-based education.
+      </p>
+      <p>
+        The institute offers a wide range of design and media courses, supported by internship and placement opportunities across creative industries. To ensure high-quality learning, SkillOne has partnered with some of the industry’s most reputed institutions, including Le Mark Institute, LTA Academy, Raj Computers, and Acazdo. In addition to academic support, Shri Hirji Bhojraj & Sons actively provides scholarships and education loan facilities, in collaboration with these knowledge partners, to make career-focused education accessible for all aspiring individuals.
+      </p>
+      <button class="explore-btn">EXPLORE NOW</button>
+    </div>
+  </section>
+
+<!-- knowledge partners section -->
+  <section class="knowledge-partners">
+        <h2 class="section-heading">Knowledge Partners</h2>
+
+        <div class="partner-tabs">
+            <button class="partner-tab active">Le Mark</button>
+            <button class="partner-tab">Raj Computers</button>
+            <button class="partner-tab">Acadzo</button>
+            <button class="partner-tab">Partner 4</button>
+        </div>
+
+        <div class="carousel-wrapper">
+            <button class="carousel-arrow arrow-left" onclick="scrollCarousel(-1)">&#8249;</button>
+
+            <div class="carousel-view">
+            <div class="carousel-track">
+                <!-- Partner Card 1 -->
+                <div class="partner-card">
+                <img src="assets/images/graphic.jpg" alt="Graphic Design" />
+                <div class="card-details">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedA do eiusmod.</p>
+                    <div class="card-actions">
+                    <button class="btn primary">KNOW MORE</button>
+                    <button class="btn secondary">DOWNLOAD BROCHURE</button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Partner Card 2 -->
+                <div class="partner-card">
+                <img src="assets/images/interior.jpg" alt="Interior Design" />
+                <div class="card-details">
+                    <h3>Interior Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedA do eiusmod.</p>
+                    <div class="card-actions">
+                    <button class="btn primary">KNOW MORE</button>
+                    <button class="btn secondary">DOWNLOAD BROCHURE</button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Partner Card 3 -->
+                <div class="partner-card">
+                <img src="assets/images/fashion.jpg" alt="Fashion Design" />
+                <div class="card-details">
+                    <h3>Fashion Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedA do eiusmod.</p>
+                    <div class="card-actions">
+                    <button class="btn primary">KNOW MORE</button>
+                    <button class="btn secondary">DOWNLOAD BROCHURE</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <button class="carousel-arrow arrow-right" onclick="scrollCarousel(1)">&#8250;</button>
+        </div>
+  </section>
+</body>
+</html>
